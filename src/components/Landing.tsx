@@ -5,16 +5,18 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { FiExternalLink, FiUsers, FiUser } from 'react-icons/fi'
 import Members from './Members'
 import Glow from './Glow'
+import Contact from "@/components/Contact";
 
 const HERO_IMAGES = [
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408454/SHRIMI_MEMBER_ML_mdn7yf.png',
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408453/IPSIT_DAS_LEAD_MARKETING_mpoklh.png',
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408452/ANUSKA_SINHA_MEMBER_WEB_DEV_tipyrt.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ADITYA_VIKRAM_SINGH_CO-|ER_it2ovu.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407140/ISHIKA_JAISWAL_TECHNICAL_HEAD_yonvki.png',
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408451/ARYAN_KUMAR_LEAD_OPERATIONS_obmshf.png',
 ]
 
 const GROUP_PHOTO =
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408401/ANUSHREE_SAXENA_MEMBER_WEB_DEV_aqh1wt.png'
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771704898/038c7ca1-629f-43f9-9c0a-9cb4e6cca210.png'
 
 // ============================================
 // PARTICLE NETWORK BACKGROUND
@@ -167,21 +169,11 @@ function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center gap-3 group"
         >
-          <div className="relative w-9 h-9 flex items-center justify-center">
-            <motion.div
-              className="absolute inset-0 rounded-full border border-[#FFC20E]/50"
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 12, ease: 'linear' }}
-            />
-            <motion.div
-              className="absolute inset-[3px] rounded-full border border-[#FFC20E]/20"
-              animate={{ rotate: -360 }}
-              transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
-            />
-            <span className="relative z-10 text-[#FFC20E] font-black text-[9px] tracking-tight">
-              NX
-            </span>
-          </div>
+          <img
+            src="https://res.cloudinary.com/da9zvp0mu/image/upload/v1771705575/WhatsApp_Image_2026-02-22_at_1.46.53_AM-removebg-preview_rcftja.png"
+            alt="KIIT Nexus"
+            className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,194,14,0.6)]"
+        />
           <div className="flex flex-col leading-none">
             <span
               className="text-[#FFC20E] font-black text-base tracking-[0.2em]"
@@ -219,8 +211,9 @@ function Navbar() {
           ))}
         </div>
 
-        {/* LOGIN */}
+        {/* Contact */}
         <motion.button
+          onClick={() => scrollTo('contact')}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           className="relative overflow-hidden group border border-[#FFC20E]/70 text-[#FFC20E] text-xs font-bold tracking-[0.2em] uppercase px-7 py-2.5 rounded-sm transition-all duration-300 hover:text-black"
@@ -232,7 +225,7 @@ function Navbar() {
             whileHover={{ x: 0 }}
             transition={{ duration: 0.28, ease: 'easeInOut' }}
           />
-          <span className="relative z-10">Login ↗</span>
+          <span className="relative z-10">Contact ↗</span>
         </motion.button>
       </motion.nav>
 
@@ -717,13 +710,13 @@ const projectData = [
     tech: ['Flutter', 'Node.js', 'MongoDB'],
     status: 'Live',
     link: 'https://kiit-quest-web.vercel.app/',
-    logo: '/kiit-quest-logo.png',
+    logo: 'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771706066/930c0499-2516-4ad3-a9a7-a8d14a183fcb.png',
     isFeatured: true,
     author: 'Abhishek Dhal',
     isTeam: false,
   },
   {
-    title: 'Campus Connect',
+    title: 'TestForge',
     description:
       'A real-time student networking ecosystem built to enhance collaboration and mentorship across campus.',
     tech: ['Next.js', 'Prisma', 'PostgreSQL'],
@@ -916,10 +909,12 @@ export default function Landing() {
 
       <Hero imgIndex={index} />
       <Ticker />
+      <Ticker />
       <About />
       <GroupPhoto />
       <Projects />
       <Members />
+      <Contact />
     </div>
   )
 }

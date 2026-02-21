@@ -34,7 +34,7 @@
     webLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/web_lead',
     androidLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/android_lead',
     flutterLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/flutter_lead',
-    cloudLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/cloud_lead',
+    //cloudLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/cloud_lead',
     mlLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/ml_lead',
     designLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/design_lead',
     broadcastLead: 'https://res.cloudinary.com/your_cloud_name/image/upload/broadcast_lead',

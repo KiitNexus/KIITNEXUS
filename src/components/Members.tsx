@@ -1,193 +1,243 @@
-'use client'
+  'use client'
 
-import { motion } from 'framer-motion'
+  import { motion } from 'framer-motion'
+  import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+  import { MdEmail } from "react-icons/md";
 
-const IMAGES = {
-  founder:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408454/SHRIMI_MEMBER_ML_mdn7yf.png',
-  cofounder:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408453/IPSIT_DAS_LEAD_MARKETING_mpoklh.png',
-  techHead1:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408453/IPSIT_DAS_LEAD_MARKETING_mpoklh.png',
-  techHead2:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408452/ANUSKA_SINHA_MEMBER_WEB_DEV_tipyrt.png',
-  techHead3:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408451/ARYAN_KUMAR_LEAD_OPERATIONS_obmshf.png',
-  webLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408401/ANUSHREE_SAXENA_MEMBER_WEB_DEV_aqh1wt.png',
-  androidLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407151/SUBHAM_DUTTA_MEMBER_ML_p5xdv9.png',
-  flutterLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407147/SHRIDIPA_DHAR_LEAD_ML_t6kwms.png',
-  designLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407146/SHIVAM_TECHNICAL_HEAD_tvgbiu.png',
-  cloudLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
-  mlLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407140/ISHIKA_JAISWAL_TECHNICAL_HEAD_yonvki.png',
-  broadcastLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
-  marketingLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407140/ISHIKA_JAISWAL_TECHNICAL_HEAD_yonvki.png',
-  opsLead:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
-  member1:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
-  member2:
-    'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407140/ISHIKA_JAISWAL_TECHNICAL_HEAD_yonvki.png',
-}
+  const IMAGES = {
+    founder:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
+    cofounder:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ADITYA_VIKRAM_SINGH_CO-FOUNDER_it2ovu.png',
+    techHead1:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
+    techHead2:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407146/SHIVAM_TECHNICAL_HEAD_tvgbiu.png',
+    techHead3:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771709339/bf85c5b0-e7ef-4f03-a3a3-441c5bddfeea.png',
+    webLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407139/CHANDAN_KUMAR_LEAD_WEB_DEV_uzuvtu.png',
+    androidLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407138/ANURAG_MUKHERJEE_LEAD_APP_DEV_ANDROID_vex2is.png',
+    flutterLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407138/ANANYA_RAJ_LEAD_APP_DEV_FLUTTER_dhsacs.png',
+    designLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407143/OWAIS_LEAD_GRAPHIC_DESIGNING_k9rl0p.png',
+    cloudLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
+    mlLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407147/SHRIDIPA_DHAR_LEAD_ML_t6kwms.png',
+    broadcastLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407145/SAYAN_BARMAN_LEAD_BROADCASTING_auk8zp.png',
+    marketingLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408453/IPSIT_DAS_LEAD_MARKETING_mpoklh.png',
+    opsLead:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408451/ARYAN_KUMAR_LEAD_OPERATIONS_obmshf.png',
+    member1:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHIGYAN_SINGH_MEMBER_ML_pbgeii.png',
+    member2:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408401/ANUSHREE_SAXENA_MEMBER_WEB_DEV_aqh1wt.png',
+    member3:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408452/ANUSKA_SINHA_MEMBER_WEB_DEV_tipyrt.png',
+    member4:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407151/SUBHAM_DUTTA_MEMBER_ML_p5xdv9.png',
+    member5:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408454/SHRIMI_MEMBER_ML_mdn7yf.png',
+    member6:
+      'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771704544/c8ab5fe4-0bf7-4da0-8313-c8495b23fb86.png',
+  }
 
 const founders = [
-  { name: 'Founder Name', role: 'Founder', img: IMAGES.founder },
-  { name: 'Co-Founder Name', role: 'Co-Founder', img: IMAGES.cofounder },
+  { name: 'Abhishek Dhal', role: 'Founder', img: IMAGES.founder, pos: 'center 32%',linkedin: 'https://www.linkedin.com/in/abhishek--dhal/',github: 'https://github.com/Abhishekdhal',mail: 'abhishekdhalofficial@gmail.com',instagram: 'https://www.instagram.com/abhishek_dhal_2211?igsh=MTRlZzgydno3cXpxaQ%3D%3D&utm_source=qr', },
+  { name: 'Aditya Vikram Singh', role: 'Co-Founder', img: IMAGES.cofounder, pos: 'center 18%',linkedin: '#',github: '#',mail: '#',instagram: '#', },
 ]
 
-const techHeads = [
-  { name: 'Tech Head 1', role: 'Technical Head', img: IMAGES.techHead1 },
-  { name: 'Tech Head 2', role: 'Technical Head', img: IMAGES.techHead2 },
-  { name: 'Tech Head 3', role: 'Technical Head', img: IMAGES.techHead3 },
-]
+  const techHeads = [
+    { name: 'Nistha Mishra', role: 'Technical Head', img: IMAGES.techHead1,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Shivam', role: 'Technical Head', img: IMAGES.techHead2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Ishika Jaiswal', role: 'Technical Head', img: IMAGES.techHead3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+  ]
 
-const techLeads = [
-  { name: 'Web Lead', role: 'Web Dev Lead', img: IMAGES.webLead },
-  { name: 'Android Lead', role: 'Android Lead', img: IMAGES.androidLead },
-  { name: 'Flutter Lead', role: 'Flutter Lead', img: IMAGES.flutterLead },
-  { name: 'Cloud Lead', role: 'Cloud Lead', img: IMAGES.cloudLead },
-  { name: 'ML Lead', role: 'Machine Learning', img: IMAGES.mlLead },
-]
+  const techLeads = [
+    { name: 'Chandan Kumar', role: 'Web Dev Lead', img: IMAGES.webLead,linkedin: 'https://www.linkedin.com/in/chandan-kumar-87aa87321',github: 'https://github.com/Chandan1525',mail: 'chandan9a15@gmail.com',instagram: 'https://www.instagram.com/og__.chandan._?igsh=NHg3ejZ4aWc4ZDU0&utm_source=qr', },
+    { name: 'Anurag Mukherjee', role: 'Android Lead', img: IMAGES.androidLead,linkedin: 'https://www.linkedin.com/in/anurag-mukherjee-8a0abb314?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/anuragdev263',mail: 'mukherjeeanurag86@gmail.com',instagram: 'https://www.instagram.com/itzz__anurag_001?igsh=MWp4NHk4amNmeWhvcw==', },
+    { name: 'Ananya Raj', role: 'Flutter Lead', img: IMAGES.flutterLead,linkedin: 'https://www.linkedin.com/in/ananya-raj-8545a736a',github: 'https://github.com/ananyaraj12',mail: 'rajananya1612@gmail.com ',instagram: 'https://www.instagram.com/anonya.a_?igsh=MXRtNXl2czdyem9pbw==', },
+    { name: 'Shridipa Dhar', role: 'Machine Learning', img: IMAGES.mlLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+  ]
 
-const nonTechLeads = [
-  { name: 'Design Lead', role: 'Graphic Designer', img: IMAGES.designLead },
-  { name: 'Broadcast Lead', role: 'Broadcasting', img: IMAGES.broadcastLead },
-  { name: 'Marketing Lead', role: 'Marketing', img: IMAGES.marketingLead },
-  { name: 'Ops Lead', role: 'Operations', img: IMAGES.opsLead },
-]
+  const nonTechLeads = [
+    { name: 'Owais', role: 'Graphic Designer', img: IMAGES.designLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Sayan Barman', role: 'Broadcasting', img: IMAGES.broadcastLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Ipsit Das', role: 'Marketing', img: IMAGES.marketingLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Aryan Kumar', role: 'Operations', img: IMAGES.opsLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+  ]
 
-const members = Array.from({ length: 15 }).map((_, i) => ({
-  name: `Member ${i + 1}`,
-  role: 'Core Member',
-  img: i % 2 === 0 ? IMAGES.member1 : IMAGES.member2,
-}))
+  const members = [
+    { name: 'Abhigyan Singh', role: 'Machine Learning', img: IMAGES.member1,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Anushree Saxena', role: 'Web Developer', img: IMAGES.member2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Anushka Sinha', role: 'Web Developer', img: IMAGES.member3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Subham Dutta', role: 'Machine Learning', img: IMAGES.member4,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Shrimi', role: 'Machine Learning', img: IMAGES.member5,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Sipra Mishra', role: 'Broadcasting', img: IMAGES.member6},
+  ]
 
-const MemberNode = ({
-  name,
-  role,
-  img,
-}: {
-  name: string
-  role: string
-  img: string
-}) => (
-  <motion.div
-    whileHover={{ y: -5 }}
-    className="relative group flex flex-col items-center overflow-hidden rounded-2xl border backdrop-blur-md transition-all duration-300 bg-white/5 border-white/10 w-60 h-80 hover:border-[#FFC20E]/50"
-  >
-    <div className="relative w-full h-3/4 overflow-hidden z-0">
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 opacity-60" />
-      {img ? (
-        <img
-          src={img}
-          alt={name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-      ) : (
-        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black" />
-      )}
-    </div>
-    <div className="absolute bottom-0 left-0 right-0 p-4 z-20 flex flex-col items-center justify-center bg-black/80 h-1/4 border-t border-white/5">
-      <h3 className="font-bold text-white text-center leading-tight text-lg truncate w-full">
-        {name}
-      </h3>
-      <p className="text-center mt-1 text-[#FFC20E] font-medium text-xs uppercase tracking-wider truncate w-full">
-        {role}
-      </p>
-    </div>
-  </motion.div>
-)
-
-const Connector = ({ height = 'h-16' }) => (
-  <div
-    className={`w-0.5 ${height} bg-gradient-to-b from-[#FFC20E] to-white/10 mx-auto opacity-50`}
-  />
-)
-
-export default function Members() {
-  return (
-    <section
-      id="members"
-      className="relative z-10 py-32 px-4 max-w-7xl mx-auto"
+  const MemberNode = ({
+    name,
+    role,
+    img,
+    pos = 'center 18%',
+    linkedin,
+    github,
+    mail,
+    instagram,
+  }: any)=>
+  (
+    <motion.div
+      whileHover={{ y: -6 }}
+      className="relative group overflow-hidden rounded-2xl border backdrop-blur-md transition-all duration-300 bg-white/5 border-white/10 w-60 hover:border-[#FFC20E]/60"
     >
-      <div className="text-center mb-20">
-        <span className="px-4 py-2 rounded-full bg-white/10 text-sm text-gray-300 border border-white/10 mb-6 inline-block">
-          THE TEAM
-        </span>
-        <h2 className="text-5xl md:text-7xl font-bold text-white">
-          Meet the <span className="text-[#FFC20E]">Nexus</span>
-        </h2>
+      {/* Portrait Image Frame */}
+      <div className="relative w-full aspect-[3/4] overflow-hidden">
+        {img ? (
+          <img
+            src={img}
+            alt={name}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
+            style={{
+            objectPosition: pos,
+    }}
+  />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black" />
+        )}
+
+        {/* soft fade so chin/neck never cuts */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
       </div>
 
-      <div className="flex flex-col items-center">
-        <div className="flex flex-wrap justify-center gap-8 relative z-10">
-          {founders.map((f, i) => (
-            <MemberNode key={i} {...f} />
-          ))}
-        </div>
+      {/* Info */}
+      {/* Info + Social Links */}
+<div className="p-4 text-center bg-black/85 border-t border-white/5">
+  <h3 className="font-semibold text-white text-lg leading-tight">
+    {name}
+  </h3>
 
-        <Connector height="h-24" />
+  <p className="mt-1 text-[#FFC20E] text-xs uppercase tracking-widest">
+    {role}
+  </p>
 
-        <div className="relative p-6 border border-white/5 rounded-3xl bg-white/[0.02] w-full max-w-5xl">
-          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-gray-500 uppercase tracking-widest border border-white/10 rounded-full">
-            Technical Heads
-          </span>
-          <div className="flex flex-wrap justify-center gap-6">
-            {techHeads.map((h, i) => (
-              <MemberNode key={i} {...h} />
-            ))}
-          </div>
-        </div>
+  <div className="flex justify-center gap-4 mt-3 text-lg text-gray-300">
+    {github && (
+      <a href={github} target="_blank">
+        <FaGithub className="hover:text-white hover:scale-125 transition" />
+      </a>
+    )}
 
-        <Connector height="h-24" />
+    {linkedin && (
+      <a href={linkedin} target="_blank">
+        <FaLinkedin className="hover:text-[#0A66C2] hover:scale-125 transition" />
+      </a>
+    )}
 
-        <div className="w-full relative p-8 border-t border-white/10">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-[#FFC20E] font-bold uppercase tracking-widest border border-[#FFC20E]/20 rounded-full">
-            Domain Leads
-          </div>
-          <h3 className="text-center text-white/50 mb-8 text-sm uppercase tracking-widest">
-            Technical Domain
-          </h3>
-          <div className="flex flex-wrap justify-center gap-6">
-            {techLeads.map((l, i) => (
-              <MemberNode key={i} {...l} />
-            ))}
-          </div>
-        </div>
+    {mail && (
+      <a href={mail}>
+        <MdEmail className="hover:text-yellow-400 hover:scale-125 transition" />
+      </a>
+    )}
 
-        <Connector height="h-12" />
-
-        <div className="w-full p-8">
-          <h3 className="text-center text-white/50 mb-8 text-sm uppercase tracking-widest">
-            Non-Technical Domain
-          </h3>
-          <div className="flex flex-wrap justify-center gap-6">
-            {nonTechLeads.map((l, i) => (
-              <MemberNode key={i} {...l} />
-            ))}
-          </div>
-        </div>
-
-        <Connector height="h-24" />
-
-        <div className="w-full relative p-8 border border-white/5 rounded-3xl bg-white/[0.02]">
-          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-gray-500 uppercase tracking-widest border border-white/10 rounded-full">
-            Core Team (15)
-          </span>
-          <div className="flex flex-wrap justify-center gap-6">
-            {members.map((m, i) => (
-              <MemberNode key={i} {...m} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+    {instagram && (
+      <a href={instagram} target="_blank">
+        <FaInstagram className="hover:text-pink-500 hover:scale-125 transition" />
+      </a>
+    )}
+  </div>
+</div>
+    </motion.div>
   )
-}
+
+  const Connector = ({ height = 'h-16' }) => (
+    <div
+      className={`w-0.5 ${height} bg-gradient-to-b from-[#FFC20E] to-white/10 mx-auto opacity-50`}
+    />
+  )
+
+  export default function Members() {
+    return (
+      <section
+        id="members"
+        className="relative z-10 py-32 px-4 max-w-7xl mx-auto"
+      >
+        <div className="text-center mb-20">
+          <span className="px-4 py-2 rounded-full bg-white/10 text-sm text-gray-300 border border-white/10 mb-6 inline-block">
+            THE TEAM
+          </span>
+          <h2 className="text-5xl md:text-7xl font-bold text-white">
+            Meet the <span className="text-[#FFC20E]">Nexus</span>
+          </h2>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <div className="flex flex-wrap justify-center gap-8 relative z-10">
+            {founders.map((f, i) => (
+              <MemberNode key={i} {...f} />
+            ))}
+          </div>
+
+          <Connector height="h-24" />
+
+          <div className="relative p-6 border border-white/5 rounded-3xl bg-white/[0.02] w-full max-w-5xl">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-gray-500 uppercase tracking-widest border border-white/10 rounded-full">
+              Technical Heads
+            </span>
+            <div className="flex flex-wrap justify-center gap-6">
+              {techHeads.map((h, i) => (
+                <MemberNode key={i} {...h} />
+              ))}
+            </div>
+          </div>
+
+          <Connector height="h-24" />
+
+          <div className="w-full relative p-8 border-t border-white/10">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-[#FFC20E] font-bold uppercase tracking-widest border border-[#FFC20E]/20 rounded-full">
+              Domain Leads
+            </div>
+            <h3 className="text-center text-white/50 mb-8 text-sm uppercase tracking-widest">
+              Technical Domain
+            </h3>
+            <div className="flex flex-wrap justify-center gap-6">
+              {techLeads.map((l, i) => (
+                <MemberNode key={i} {...l} />
+              ))}
+            </div>
+          </div>
+
+          <Connector height="h-12" />
+
+          <div className="w-full p-8">
+            <h3 className="text-center text-white/50 mb-8 text-sm uppercase tracking-widest">
+              Non-Technical Domain
+            </h3>
+            <div className="flex flex-wrap justify-center gap-6">
+              {nonTechLeads.map((l, i) => (
+                <MemberNode key={i} {...l} />
+              ))}
+            </div>
+          </div>
+
+          <Connector height="h-24" />
+
+          <div className="w-full relative p-8 border border-white/5 rounded-3xl bg-white/[0.02]">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-xs text-gray-500 uppercase tracking-widest border border-white/10 rounded-full">
+              Core Team (5)
+            </span>
+            <div className="flex flex-wrap justify-center gap-6">
+              {members.map((m, i) => (
+                <MemberNode key={i} {...m} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
