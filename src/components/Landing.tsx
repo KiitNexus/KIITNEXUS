@@ -16,7 +16,7 @@ const HERO_IMAGES = [
 ]
 
 const GROUP_PHOTO =
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771704898/038c7ca1-629f-43f9-9c0a-9cb4e6cca210.png'
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771788848/74b1aa3b-dfcd-4bc6-91df-d17dd8af361f.png'
 
 // ============================================
 // PARTICLE NETWORK BACKGROUND

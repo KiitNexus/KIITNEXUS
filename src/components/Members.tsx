@@ -49,11 +49,11 @@
 
 const founders = [
   { name: 'Abhishek Dhal', role: 'Founder', img: IMAGES.founder, pos: 'center 32%',linkedin: 'https://www.linkedin.com/in/abhishek--dhal/',github: 'https://github.com/Abhishekdhal',mail: 'abhishekdhalofficial@gmail.com',instagram: 'https://www.instagram.com/abhishek_dhal_2211?igsh=MTRlZzgydno3cXpxaQ%3D%3D&utm_source=qr', },
-  { name: 'Aditya Vikram Singh', role: 'Co-Founder', img: IMAGES.cofounder, pos: 'center 18%',linkedin: '#',github: '#',mail: '#',instagram: '#', },
+  { name: 'Aditya Vikram Singh', role: 'Co-Founder', img: IMAGES.cofounder, pos: 'center 18%', linkedin: '#', github: '#', mail: '#', instagram: '#' },
 ]
 
   const techHeads = [
-    { name: 'Nistha Mishra', role: 'Technical Head', img: IMAGES.techHead1,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Nistha Mishra', role: 'Technical Head', img: IMAGES.techHead1,linkedin: 'https://www.linkedin.com/in/nishtha-mishra-967328290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',github: 'https://github.com/nishb2715',mail: '2329232@kiit.ac.in',instagram: 'https://www.instagram.com/nishthamishra_15?igsh=bnBhZWd1Nm84dmVv', },
     { name: 'Shivam', role: 'Technical Head', img: IMAGES.techHead2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
     { name: 'Ishika Jaiswal', role: 'Technical Head', img: IMAGES.techHead3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
   ]
@@ -62,7 +62,7 @@ const founders = [
     { name: 'Chandan Kumar', role: 'Web Dev Lead', img: IMAGES.webLead,linkedin: 'https://www.linkedin.com/in/chandan-kumar-87aa87321',github: 'https://github.com/Chandan1525',mail: 'chandan9a15@gmail.com',instagram: 'https://www.instagram.com/og__.chandan._?igsh=NHg3ejZ4aWc4ZDU0&utm_source=qr', },
     { name: 'Anurag Mukherjee', role: 'Android Lead', img: IMAGES.androidLead,linkedin: 'https://www.linkedin.com/in/anurag-mukherjee-8a0abb314?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/anuragdev263',mail: 'mukherjeeanurag86@gmail.com',instagram: 'https://www.instagram.com/itzz__anurag_001?igsh=MWp4NHk4amNmeWhvcw==', },
     { name: 'Ananya Raj', role: 'Flutter Lead', img: IMAGES.flutterLead,linkedin: 'https://www.linkedin.com/in/ananya-raj-8545a736a',github: 'https://github.com/ananyaraj12',mail: 'rajananya1612@gmail.com ',instagram: 'https://www.instagram.com/anonya.a_?igsh=MXRtNXl2czdyem9pbw==', },
-    { name: 'Shridipa Dhar', role: 'Machine Learning', img: IMAGES.mlLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Shridipa Dhar', role: 'Machine Learning', img: IMAGES.mlLead, linkedin: 'https://www.linkedin.com/in/shridipa-dhar-373b6231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', github: 'https://github.com/Shridipa', mail: '24155280@kiit.ac.in', instagram: 'https://www.instagram.com/codie_711?igsh=MWppbTluend0Mjh2NQ==' },
   ]
 
   const nonTechLeads = [
@@ -76,7 +76,7 @@ const founders = [
     { name: 'Abhigyan Singh', role: 'Machine Learning', img: IMAGES.member1,linkedin: '#',github: '#',mail: '#',instagram: '#', },
     { name: 'Anushree Saxena', role: 'Web Developer', img: IMAGES.member2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
     { name: 'Anushka Sinha', role: 'Web Developer', img: IMAGES.member3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Subham Dutta', role: 'Machine Learning', img: IMAGES.member4,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Subham Dutta', role: 'Machine Learning', img: IMAGES.member4,linkedin: 'https://www.linkedin.com/in/subham-dutta-98b86a3a2?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/Shcypr269',mail: '24051215@kiit.ac.in',instagram: 'https://www.instagram.com/dsubh_269?igsh=dnV4bmdjbTZveTA=', },
     { name: 'Shrimi', role: 'Machine Learning', img: IMAGES.member5,linkedin: '#',github: '#',mail: '#',instagram: '#', },
     { name: 'Sipra Mishra', role: 'Broadcasting', img: IMAGES.member6},
   ]

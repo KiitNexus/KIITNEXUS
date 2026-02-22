@@ -30,7 +30,7 @@ export default function Contact() {
           className="inline-flex items-center gap-3 text-lg text-white hover:text-[#FFC20E] transition"
         >
           <MdEmail size={24} />
-          kiitnexus@gmail.com
+          kiitnexus.in@gmail.com
         </a>
 
         {/* Social Links */}
