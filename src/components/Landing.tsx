@@ -21,9 +21,18 @@ const GROUP_PHOTO =
 // ============================================
 // PARTICLE NETWORK BACKGROUND
 // ============================================
+interface ParticleType {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  update: () => void;
+  draw: () => void;
+}
 function ParticlesBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const particles = useRef<any[]>([])
+  const particles = useRef<ParticleType[]>([])
   const mouse = useRef({ x: -9999, y: -9999 })
   const animationRef = useRef<number>()
 
@@ -40,15 +49,15 @@ function ParticlesBackground() {
     resize()
     window.addEventListener('resize', resize)
 
-    class Particle {
+        class Particle {
       x: number
       y: number
       vx: number
       vy: number
       size: number
       constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+        this.x = Math.random() * (canvas?.width ?? 0)
+        this.y = Math.random() * (canvas?.height ?? 0)
         this.vx = (Math.random() - 0.5) * 0.4
         this.vy = (Math.random() - 0.5) * 0.4
         this.size = Math.random() * 1.5 + 0.5
@@ -56,8 +65,10 @@ function ParticlesBackground() {
       update() {
         this.x += this.vx
         this.y += this.vy
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1
+        if (canvas) {
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1
+        }
       }
       draw() {
         if (!ctx) return

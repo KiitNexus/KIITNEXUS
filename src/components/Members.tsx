@@ -81,6 +81,16 @@ const founders = [
     { name: 'Sipra Mishra', role: 'Broadcasting', img: IMAGES.member6},
   ]
 
+  interface MemberNodeProps {
+    name: string;
+    role: string;
+    img?: string;
+    pos?: string;
+    linkedin?: string;
+    github?: string;
+    mail?: string;
+    instagram?: string;
+  }
   const MemberNode = ({
     name,
     role,
@@ -90,8 +100,7 @@ const founders = [
     github,
     mail,
     instagram,
-  }: any)=>
-  (
+  }: MemberNodeProps) => (
     <motion.div
       whileHover={{ y: -6 }}
       className="relative group overflow-hidden rounded-2xl border backdrop-blur-md transition-all duration-300 bg-white/5 border-white/10 w-60 hover:border-[#FFC20E]/60"
