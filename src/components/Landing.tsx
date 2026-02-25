@@ -6,7 +6,7 @@ import { FiExternalLink, FiUsers, FiUser } from 'react-icons/fi'
 import Members from './Members'
 import Glow from './Glow'
 import Contact from '@/components/Contact'
-
+//hero page photo
 const HERO_IMAGES = [
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ADITYA_VIKRAM_SINGH_CO-FOUNDER_it2ovu.png',
