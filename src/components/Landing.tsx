@@ -8,11 +8,13 @@ import Glow from './Glow'
 import Contact from '@/components/Contact'
 
 const HERO_IMAGES = [
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
-  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ADITYA_VIKRAM_SINGH_CO-|ER_it2ovu.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ADITYA_VIKRAM_SINGH_CO-FOUNDER_it2ovu.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407139/CHANDAN_KUMAR_LEAD_WEB_DEV_uzuvtu.png',
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407141/NISTHA_MISHRA_TECHNICAL_HEAD_kfy6yp.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407146/SHIVAM_TECHNICAL_HEAD_tvgbiu.png',
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407140/ISHIKA_JAISWAL_TECHNICAL_HEAD_yonvki.png',
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771408451/ARYAN_KUMAR_LEAD_OPERATIONS_obmshf.png',
+  'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
 ]
 
 const GROUP_PHOTO =
@@ -425,16 +427,16 @@ function Hero({ imgIndex }: { imgIndex: number }) {
             key={imgIndex}
             src={HERO_IMAGES[imgIndex]}
             initial={{ opacity: 0, scale: 1.06 }}
-            animate={{ opacity: 0.35, scale: 1 }}
+            animate={{ opacity: 0.75, scale: 1 }}
             exit={{ opacity: 0, scale: 1.02 }}
             transition={{ duration: 1.8, ease: 'easeInOut' }}
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-top brightness-125 contrast-110"
           />
         </AnimatePresence>
         {/* left fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
         {/* bottom fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
         {/* top fade for mobile */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent md:hidden" />
       </motion.div>

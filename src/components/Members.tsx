@@ -69,7 +69,7 @@ const founders = [
     { name: 'Owais', role: 'Graphic Designer', img: IMAGES.designLead,linkedin: 'https://www.linkedin.com/in/skmdowais/',github: 'https://github.com/isowaiss',mail: 'mdowais0381@gmail.com ',instagram: 'https://www.instagram.com/not_owais_', },
     { name: 'Sayan Barman', role: 'Broadcasting', img: IMAGES.broadcastLead,linkedin: 'https://www.linkedin.com/in/sayan-barman-983491327?utm_source=share_via&utm_content=profile&utm_medium=member_ios',github: 'https://github.com/Sayan238',mail: '241551003@kiit.ac.in',instagram: 'https://www.instagram.com/mr_sayan_barman_?igsh=aHV0MTEwb3F1NTRo', },
     { name: 'Ipsit Das', role: 'Marketing', img: IMAGES.marketingLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Aryan Kumar', role: 'Operations', img: IMAGES.opsLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Aryan Kumar', role: 'Operations', img: IMAGES.opsLead,linkedin: 'https://www.linkedin.com/in/aryan-kumar-687886322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',github: 'https://github.com/Aryan05-06',mail: 'aryankumar10a.jssp@gmail.com',instagram: 'https://www.instagram.com/the.aryan.kr?igsh=dTFseTJkNHZhNmdw', },
   ]
 
   const members = [
