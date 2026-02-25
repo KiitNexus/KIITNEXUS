@@ -49,13 +49,13 @@
 
 const founders = [
   { name: 'Abhishek Dhal', role: 'Founder', img: IMAGES.founder, pos: 'center 32%',linkedin: 'https://www.linkedin.com/in/abhishek--dhal/',github: 'https://github.com/Abhishekdhal',mail: 'abhishekdhalofficial@gmail.com',instagram: 'https://www.instagram.com/abhishek_dhal_2211?igsh=MTRlZzgydno3cXpxaQ%3D%3D&utm_source=qr', },
-  { name: 'Aditya Vikram Singh', role: 'Co-Founder', img: IMAGES.cofounder, pos: 'center 18%', linkedin: '#', github: '#', mail: '#', instagram: '#' },
+  { name: 'Aditya Vikram Singh', role: 'Co-Founder', img: IMAGES.cofounder, pos: 'center 18%', linkedin: 'https://www.linkedin.com/in/aditya-vikram-singh-5122a2322?utm_source=share_via&utm_content=profile&utm_medium=member_android', github: 'https://github.com/aditya123-glitch', mail: 'adityavikram1717@gmail.com', instagram: 'https://www.instagram.com/_.aditya.vikram._?igsh=YTdmdDJpc2M4NXlw' },
 ]
 
   const techHeads = [
     { name: 'Nistha Mishra', role: 'Technical Head', img: IMAGES.techHead1,linkedin: 'https://www.linkedin.com/in/nishtha-mishra-967328290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',github: 'https://github.com/nishb2715',mail: '2329232@kiit.ac.in',instagram: 'https://www.instagram.com/nishthamishra_15?igsh=bnBhZWd1Nm84dmVv', },
-    { name: 'Shivam', role: 'Technical Head', img: IMAGES.techHead2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Ishika Jaiswal', role: 'Technical Head', img: IMAGES.techHead3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Shivam', role: 'Technical Head', img: IMAGES.techHead2,linkedin: 'https://www.linkedin.com/in/shivam-2625b5210/',github: 'https://github.com/shivam-mk1',mail: 'ss8933031@gmail.com',instagram: 'https://www.instagram.com/shivvvvva.m?igsh=NTZ5d2ZseTIwYXEw', },
+    { name: 'Ishika Jaiswal', role: 'Technical Head', img: IMAGES.techHead3,linkedin: 'https://www.linkedin.com/in/ishika-jaiswal-96b3b4284/',github: 'https://github.com/ishikajais27',mail: 'ishikajais09876@gmail.com',instagram: 'https://www.instagram.com/ishika_j.27?igsh=Z3c4bjZuMGpsemVz', },
   ]
 
   const techLeads = [
@@ -66,19 +66,19 @@ const founders = [
   ]
 
   const nonTechLeads = [
-    { name: 'Owais', role: 'Graphic Designer', img: IMAGES.designLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Sayan Barman', role: 'Broadcasting', img: IMAGES.broadcastLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Owais', role: 'Graphic Designer', img: IMAGES.designLead,linkedin: 'https://www.linkedin.com/in/skmdowais/',github: 'https://github.com/isowaiss',mail: 'mdowais0381@gmail.com ',instagram: 'https://www.instagram.com/not_owais_', },
+    { name: 'Sayan Barman', role: 'Broadcasting', img: IMAGES.broadcastLead,linkedin: 'https://www.linkedin.com/in/sayan-barman-983491327?utm_source=share_via&utm_content=profile&utm_medium=member_ios',github: 'https://github.com/Sayan238',mail: '241551003@kiit.ac.in',instagram: 'https://www.instagram.com/mr_sayan_barman_?igsh=aHV0MTEwb3F1NTRo', },
     { name: 'Ipsit Das', role: 'Marketing', img: IMAGES.marketingLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
     { name: 'Aryan Kumar', role: 'Operations', img: IMAGES.opsLead,linkedin: '#',github: '#',mail: '#',instagram: '#', },
   ]
 
   const members = [
-    { name: 'Abhigyan Singh', role: 'Machine Learning', img: IMAGES.member1,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Anushree Saxena', role: 'Web Developer', img: IMAGES.member2,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Anushka Sinha', role: 'Web Developer', img: IMAGES.member3,linkedin: '#',github: '#',mail: '#',instagram: '#', },
+    { name: 'Abhigyan Singh', role: 'Machine Learning', img: IMAGES.member1,linkedin: 'https://www.linkedin.com/in/abhigyan-singh-9095a1315?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/abhigyansingh7',mail: 'abhigyan990580@gmail.com',instagram: '#', },
+    { name: 'Anushree Saxena', role: 'Web Developer', img: IMAGES.member2,linkedin: 'https://www.linkedin.com/in/anushree-saxena-349a23345',github: 'https://github.com/A-Saxena27',mail: 'anusaxenasmail27@gmail.com',instagram: 'https://www.instagram.com/dark_choxolatte?igsh=MTIzbG9iaTlnZWwybQ==', },
+    { name: 'Anushka Sinha', role: 'Web Developer', img: IMAGES.member3,linkedin: 'https://www.linkedin.com/in/anuska-sinha45264/',github: 'https://github.com/anuskasinha18-boop',mail: 'anuskasinha18@gmail.com',instagram: 'https://www.instagram.com/theanuska45?igsh=MXF1amZ6MWQ3djRqYg==', },
     { name: 'Subham Dutta', role: 'Machine Learning', img: IMAGES.member4,linkedin: 'https://www.linkedin.com/in/subham-dutta-98b86a3a2?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/Shcypr269',mail: '24051215@kiit.ac.in',instagram: 'https://www.instagram.com/dsubh_269?igsh=dnV4bmdjbTZveTA=', },
-    { name: 'Shrimi', role: 'Machine Learning', img: IMAGES.member5,linkedin: '#',github: '#',mail: '#',instagram: '#', },
-    { name: 'Sipra Mishra', role: 'Broadcasting', img: IMAGES.member6},
+    { name: 'Shrimi', role: 'Machine Learning', img: IMAGES.member5,linkedin: 'https://www.linkedin.com/in/shrimi-919074332?utm_source=share_via&utm_content=profile&utm_medium=member_android',github: 'https://github.com/silvershades-coder?tab=overview&from=2025-12-01&to=2025-12-31',mail: 'https://www.instagram.com/silvershades_48?igsh=aDhiOXh1cjFuOGI4',instagram: 'shrimiofficial06@gmail.com', },
+    { name: 'Sipra Mishra', role: 'Broadcasting', img: IMAGES.member6,linkedin: '#',github: '#',mail: '#',instagram: '#',},
   ]
 
   interface MemberNodeProps {
