@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { FiExternalLink, FiUsers, FiUser } from 'react-icons/fi'
 import Members from './Members'
 import Glow from './Glow'
-import Contact from "@/components/Contact";
+import Contact from '@/components/Contact'
 
 const HERO_IMAGES = [
   'https://res.cloudinary.com/da9zvp0mu/image/upload/v1771407136/ABHISHEK_DHAL_FOUNDER_COORDINATOR_abjldw.png',
@@ -22,13 +22,13 @@ const GROUP_PHOTO =
 // PARTICLE NETWORK BACKGROUND
 // ============================================
 interface ParticleType {
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  size: number;
-  update: () => void;
-  draw: () => void;
+  x: number
+  y: number
+  vx: number
+  vy: number
+  size: number
+  update: () => void
+  draw: () => void
 }
 function ParticlesBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -49,7 +49,7 @@ function ParticlesBackground() {
     resize()
     window.addEventListener('resize', resize)
 
-        class Particle {
+    class Particle {
       x: number
       y: number
       vx: number
@@ -79,7 +79,13 @@ function ParticlesBackground() {
       }
     }
 
-    particles.current = Array.from({ length: 280 }, () => new Particle())
+    // Reduce particles on mobile for performance
+    const particleCount = window.innerWidth < 768 ? 80 : 280
+    particles.current = Array.from(
+      { length: particleCount },
+      () => new Particle(),
+    )
+
     const handleMouseMove = (e: MouseEvent) => {
       mouse.current = { x: e.clientX, y: e.clientY }
     }
@@ -152,8 +158,14 @@ function Navbar() {
   }, [])
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
     setMenuOpen(false)
+    setTimeout(() => {
+      const el = document.getElementById(id)
+      if (!el) return
+      const navHeight = window.innerWidth < 768 ? 56 : 0
+      const top = el.getBoundingClientRect().top + window.scrollY - navHeight
+      window.scrollTo({ top, behavior: 'smooth' })
+    }, 100)
   }
 
   const links = [
@@ -169,7 +181,7 @@ function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-        className={`fixed top-0 left-0 right-0 z-50 hidden md:flex items-center justify-between px-10 transition-all duration-700 ${
+        className={`fixed top-0 left-0 right-0 z-50 hidden md:flex items-center justify-between px-6 lg:px-10 transition-all duration-700 ${
           scrolled
             ? 'py-4 bg-black/85 backdrop-blur-2xl border-b border-[#FFC20E]/10'
             : 'py-7 bg-transparent'
@@ -183,17 +195,17 @@ function Navbar() {
           <img
             src="https://res.cloudinary.com/da9zvp0mu/image/upload/v1771705575/WhatsApp_Image_2026-02-22_at_1.46.53_AM-removebg-preview_rcftja.png"
             alt="KIIT Nexus"
-            className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,194,14,0.6)]"
-        />
+            className="h-8 lg:h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,194,14,0.6)]"
+          />
           <div className="flex flex-col leading-none">
             <span
-              className="text-[#FFC20E] font-black text-base tracking-[0.2em]"
+              className="text-[#FFC20E] font-black text-sm lg:text-base tracking-[0.2em]"
               style={{ fontFamily: 'monospace' }}
             >
               KIIT
             </span>
             <span
-              className="text-white font-black text-base tracking-[0.2em]"
+              className="text-white font-black text-sm lg:text-base tracking-[0.2em]"
               style={{ fontFamily: 'monospace' }}
             >
               NEXUS
@@ -201,7 +213,7 @@ function Navbar() {
           </div>
         </button>
 
-        {/* LINKS — pill-style floating strip */}
+        {/* LINKS */}
         <div className="flex items-center gap-1 bg-white/[0.04] border border-white/[0.08] rounded-full px-2 py-1.5 backdrop-blur-md">
           {links.map((link) => (
             <button
@@ -210,7 +222,7 @@ function Navbar() {
                 scrollTo(link.id)
                 setActiveLink(link.id)
               }}
-              className={`relative px-5 py-2 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-full ${
+              className={`relative px-3 lg:px-5 py-2 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-full ${
                 activeLink === link.id
                   ? 'text-black bg-[#FFC20E]'
                   : 'text-gray-400 hover:text-white hover:bg-white/5'
@@ -227,7 +239,7 @@ function Navbar() {
           onClick={() => scrollTo('contact')}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="relative overflow-hidden group border border-[#FFC20E]/70 text-[#FFC20E] text-xs font-bold tracking-[0.2em] uppercase px-7 py-2.5 rounded-sm transition-all duration-300 hover:text-black"
+          className="relative overflow-hidden group border border-[#FFC20E]/70 text-[#FFC20E] text-xs font-bold tracking-[0.2em] uppercase px-5 lg:px-7 py-2.5 rounded-sm transition-all duration-300 hover:text-black"
           style={{ fontFamily: 'monospace' }}
         >
           <motion.div
@@ -240,17 +252,28 @@ function Navbar() {
         </motion.button>
       </motion.nav>
 
-      {/* MOBILE */}
+      {/* MOBILE NAV */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 py-4 bg-black/90 backdrop-blur-xl border-b border-white/5">
-        <span
-          className="text-[#FFC20E] font-black text-sm tracking-[0.2em]"
-          style={{ fontFamily: 'monospace' }}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex items-center gap-2"
         >
-          NEXUS
-        </span>
+          <img
+            src="https://res.cloudinary.com/da9zvp0mu/image/upload/v1771705575/WhatsApp_Image_2026-02-22_at_1.46.53_AM-removebg-preview_rcftja.png"
+            alt="KIIT Nexus"
+            className="h-7 w-auto object-contain"
+          />
+          <span
+            className="text-[#FFC20E] font-black text-sm tracking-[0.2em]"
+            style={{ fontFamily: 'monospace' }}
+          >
+            NEXUS
+          </span>
+        </button>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="p-2 flex flex-col gap-1.5"
+          aria-label="Toggle menu"
         >
           <motion.span
             animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
@@ -287,10 +310,11 @@ function Navbar() {
               </button>
             ))}
             <button
+              onClick={() => scrollTo('contact')}
               className="border border-[#FFC20E] text-[#FFC20E] text-xs px-8 py-2.5 tracking-widest uppercase"
               style={{ fontFamily: 'monospace' }}
             >
-              Login
+              Contact ↗
             </button>
           </motion.div>
         )}
@@ -313,20 +337,20 @@ function Ticker() {
   ]
   const doubled = [...items, ...items]
   return (
-    <div className="overflow-hidden py-4 border-y border-white/5 bg-black/40 backdrop-blur-sm">
+    <div className="overflow-hidden py-3 md:py-4 border-y border-white/5 bg-black/40 backdrop-blur-sm">
       <motion.div
-        className="flex gap-12 whitespace-nowrap"
+        className="flex gap-8 md:gap-12 whitespace-nowrap"
         animate={{ x: ['0%', '-50%'] }}
         transition={{ repeat: Infinity, duration: 28, ease: 'linear' }}
       >
         {doubled.map((item, i) => (
           <span
             key={i}
-            className="flex items-center gap-12 text-xs font-bold tracking-[0.3em] uppercase text-white/30"
+            className="flex items-center gap-8 md:gap-12 text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-white/30"
             style={{ fontFamily: 'monospace' }}
           >
             {item}
-            <span className="text-[#FFC20E]/50 text-base">✦</span>
+            <span className="text-[#FFC20E]/50 text-sm md:text-base">✦</span>
           </span>
         ))}
       </motion.div>
@@ -378,7 +402,7 @@ function SpotlightButton({
 }
 
 // ============================================
-// HERO — COMPLETELY REDESIGNED
+// HERO — RESPONSIVE
 // ============================================
 function Hero({ imgIndex }: { imgIndex: number }) {
   const { scrollY } = useScroll()
@@ -391,9 +415,9 @@ function Hero({ imgIndex }: { imgIndex: number }) {
       id="home"
       className="relative min-h-screen w-full overflow-hidden bg-black flex items-end pb-0"
     >
-      {/* FULL BG IMAGE — right-side bleed */}
+      {/* BG IMAGE */}
       <motion.div
-        className="absolute right-0 top-0 h-full w-[55%] z-0"
+        className="absolute right-0 top-0 h-full w-full md:w-[55%] z-0"
         style={{ y: yImg }}
       >
         <AnimatePresence mode="wait">
@@ -401,21 +425,23 @@ function Hero({ imgIndex }: { imgIndex: number }) {
             key={imgIndex}
             src={HERO_IMAGES[imgIndex]}
             initial={{ opacity: 0, scale: 1.06 }}
-            animate={{ opacity: 0.5, scale: 1 }}
+            animate={{ opacity: 0.35, scale: 1 }}
             exit={{ opacity: 0, scale: 1.02 }}
             transition={{ duration: 1.8, ease: 'easeInOut' }}
             className="w-full h-full object-cover object-top"
           />
         </AnimatePresence>
         {/* left fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
         {/* bottom fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+        {/* top fade for mobile */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent md:hidden" />
       </motion.div>
 
-      {/* GRAIN OVERLAY on image */}
+      {/* GRAIN OVERLAY */}
       <div
-        className="absolute right-0 top-0 h-full w-[55%] z-[1] pointer-events-none opacity-30 mix-blend-overlay"
+        className="absolute right-0 top-0 h-full w-full md:w-[55%] z-[1] pointer-events-none opacity-30 mix-blend-overlay"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
           backgroundRepeat: 'repeat',
@@ -426,25 +452,25 @@ function Hero({ imgIndex }: { imgIndex: number }) {
       {/* TEXT CONTENT */}
       <motion.div
         style={{ y: yText, opacity }}
-        className="relative z-10 w-full px-8 md:px-16 lg:px-24 pb-24 pt-40"
+        className="relative z-10 w-full px-6 sm:px-8 md:px-16 lg:px-24 pb-16 md:pb-24 pt-28 md:pt-40"
       >
         {/* eyebrow */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
-          className="flex items-center gap-3 mb-8"
+          className="flex items-center gap-3 mb-6 md:mb-8"
         >
-          <div className="h-px w-12 bg-[#FFC20E]" />
+          <div className="h-px w-8 md:w-12 bg-[#FFC20E]" />
           <span
-            className="text-[#FFC20E] text-xs font-bold tracking-[0.35em] uppercase"
+            className="text-[#FFC20E] text-[10px] md:text-xs font-bold tracking-[0.25em] md:tracking-[0.35em] uppercase"
             style={{ fontFamily: 'monospace' }}
           >
             KIIT University · Est. 2024
           </span>
         </motion.div>
 
-        {/* MAIN HEADLINE — staggered line-by-line */}
+        {/* MAIN HEADLINE */}
         <div className="overflow-hidden">
           {['WHERE', 'AMBITION', 'MEETS'].map((word, i) => (
             <div key={word} className="overflow-hidden">
@@ -458,11 +484,12 @@ function Hero({ imgIndex }: { imgIndex: number }) {
                 }}
               >
                 <span
-                  className={`block text-[clamp(3.5rem,9vw,8.5rem)] font-black leading-[0.88] tracking-tight ${
+                  className={`block font-black leading-[0.88] tracking-tight ${
                     i === 1 ? 'text-[#FFC20E]' : 'text-white'
                   }`}
                   style={{
                     fontFamily: "'DM Sans', 'Helvetica Neue', sans-serif",
+                    fontSize: 'clamp(1.6rem, 8.5vw, 8.5rem)',
                   }}
                 >
                   {word}
@@ -481,10 +508,11 @@ function Hero({ imgIndex }: { imgIndex: number }) {
               }}
             >
               <span
-                className="block text-[clamp(3.5rem,9vw,8.5rem)] font-black leading-[0.88] tracking-tight text-transparent"
+                className="block font-black leading-[0.88] tracking-tight text-transparent whitespace-nowrap"
                 style={{
                   fontFamily: "'DM Sans', 'Helvetica Neue', sans-serif",
                   WebkitTextStroke: '1.5px rgba(255,255,255,0.35)',
+                  fontSize: 'clamp(1.6rem, 8.5vw, 8.5rem)',
                 }}
               >
                 OPPORTUNITY
@@ -498,11 +526,11 @@ function Hero({ imgIndex }: { imgIndex: number }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.8 }}
-          className="mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-8"
+          className="mt-8 md:mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-8"
         >
           {/* DESCRIPTION */}
           <p
-            className="text-gray-400 text-sm leading-relaxed max-w-xs"
+            className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-[280px] md:max-w-xs"
             style={{ fontFamily: 'monospace' }}
           >
             A campus-exclusive digital ecosystem connecting builders, dreamers &
@@ -510,9 +538,9 @@ function Hero({ imgIndex }: { imgIndex: number }) {
           </p>
 
           {/* BUTTONS */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
             <SpotlightButton
-              className="px-7 py-3.5 bg-[#FFC20E] text-black font-bold text-sm tracking-widest uppercase rounded-sm shadow-[0_0_35px_rgba(255,194,14,0.5)]"
+              className="px-5 md:px-7 py-3 md:py-3.5 bg-[#FFC20E] text-black font-bold text-xs md:text-sm tracking-widest uppercase rounded-sm shadow-[0_0_35px_rgba(255,194,14,0.5)]"
               overlayColor="rgba(255,255,255,0.4)"
               onClick={() =>
                 document
@@ -523,15 +551,20 @@ function Hero({ imgIndex }: { imgIndex: number }) {
               Enter Nexus
             </SpotlightButton>
             <SpotlightButton
-              className="px-7 py-3.5 border border-white/20 text-white font-medium text-sm tracking-widest uppercase rounded-sm backdrop-blur-sm"
+              className="px-5 md:px-7 py-3 md:py-3.5 border border-white/20 text-white font-medium text-xs md:text-sm tracking-widest uppercase rounded-sm backdrop-blur-sm"
               overlayColor="rgba(255,194,14,0.15)"
+              onClick={() =>
+                document
+                  .getElementById('projects')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
             >
               Explore ↓
             </SpotlightButton>
           </div>
 
           {/* LIVE DOT */}
-          <div className="hidden sm:flex items-center gap-2 ml-auto">
+          <div className="flex items-center gap-2 sm:ml-auto">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFC20E] opacity-60" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#FFC20E]" />
@@ -545,12 +578,12 @@ function Hero({ imgIndex }: { imgIndex: number }) {
           </div>
         </motion.div>
 
-        {/* SCROLL INDICATOR */}
+        {/* SCROLL INDICATOR — desktop only */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 hidden md:flex"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 hidden md:flex"
         >
           <span
             className="text-white/20 text-[10px] tracking-[0.3em] uppercase"
@@ -571,7 +604,7 @@ function Hero({ imgIndex }: { imgIndex: number }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-2"
+        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-2"
       >
         {HERO_IMAGES.map((_, i) => (
           <div
@@ -585,15 +618,15 @@ function Hero({ imgIndex }: { imgIndex: number }) {
 }
 
 // ============================================
-// ABOUT SECTION — inline (no separate file)
+// ABOUT SECTION
 // ============================================
 function About() {
   return (
     <section
       id="about"
-      className="relative z-20 py-40 px-8 md:px-16 lg:px-24 bg-black"
+      className="relative z-20 py-20 md:py-40 px-6 md:px-16 lg:px-24 bg-black"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -611,14 +644,14 @@ function About() {
               </span>
             </div>
             <h2
-              className="text-5xl md:text-6xl font-black text-white leading-tight mb-8"
+              className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 md:mb-8"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               What is
               <br />
               <span className="text-[#FFC20E]">KIIT Nexus</span>?
             </h2>
-            <p className="text-gray-400 text-base leading-relaxed">
+            <p className="text-gray-400 text-sm md:text-base leading-relaxed">
               KIIT Nexus is a campus-exclusive digital ecosystem connecting
               students, builders and innovators inside KIIT. We build real
               products, ship them, and help each other grow.
@@ -631,7 +664,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-2 gap-3 md:gap-4"
         >
           {[
             { num: '50+', label: 'Active Members' },
@@ -641,16 +674,16 @@ function About() {
           ].map((stat) => (
             <div
               key={stat.label}
-              className="p-6 border border-white/5 rounded-xl bg-white/[0.02] hover:border-[#FFC20E]/20 transition-colors duration-300"
+              className="p-4 md:p-6 border border-white/5 rounded-xl bg-white/[0.02] hover:border-[#FFC20E]/20 transition-colors duration-300"
             >
               <div
-                className="text-4xl font-black text-[#FFC20E] mb-1"
+                className="text-3xl md:text-4xl font-black text-[#FFC20E] mb-1"
                 style={{ fontFamily: 'monospace' }}
               >
                 {stat.num}
               </div>
               <div
-                className="text-xs text-gray-500 uppercase tracking-widest"
+                className="text-[10px] md:text-xs text-gray-500 uppercase tracking-widest"
                 style={{ fontFamily: 'monospace' }}
               >
                 {stat.label}
@@ -668,13 +701,13 @@ function About() {
 // ============================================
 function GroupPhoto() {
   return (
-    <section className="relative w-full bg-black py-10 px-6 md:px-16 flex justify-center z-20">
+    <section className="relative w-full bg-black py-6 md:py-10 px-4 md:px-16 flex justify-center z-20">
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.96 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
-        className="relative w-full max-w-6xl h-[400px] md:h-[600px] overflow-hidden"
+        className="relative w-full max-w-6xl h-[260px] sm:h-[380px] md:h-[500px] lg:h-[600px] overflow-hidden"
         style={{ clipPath: 'polygon(0 0, 100% 0, 97% 100%, 3% 100%)' }}
       >
         <img
@@ -682,7 +715,7 @@ function GroupPhoto() {
           alt="KIIT Nexus Community"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent flex flex-col justify-end p-10 md:p-16">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent flex flex-col justify-end p-6 md:p-10 lg:p-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -690,20 +723,19 @@ function GroupPhoto() {
             viewport={{ once: true }}
           >
             <h3
-              className="text-4xl md:text-6xl font-black text-white mb-3 leading-tight"
+              className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black text-white mb-2 md:mb-3 leading-tight"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Built by Students,
               <br />
               for Students
             </h3>
-            <p className="text-gray-300 text-base max-w-lg">
+            <p className="text-gray-300 text-sm md:text-base max-w-lg">
               Join a community of builders, dreamers, and doers shaping the
               future at KIIT.
             </p>
           </motion.div>
         </div>
-        {/* Skewed border accent */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#FFC20E]" />
       </motion.div>
     </section>
@@ -754,14 +786,14 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative z-10 py-32 px-6 md:px-16 max-w-7xl mx-auto"
+      className="relative z-10 py-20 md:py-32 px-4 md:px-16 max-w-7xl mx-auto"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="mb-20"
+        className="mb-12 md:mb-20"
       >
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px w-8 bg-[#FFC20E]" />
@@ -772,9 +804,9 @@ function Projects() {
             Projects
           </span>
         </div>
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6">
           <h2
-            className="text-5xl md:text-7xl font-black text-white leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Be Project Ready
@@ -795,7 +827,7 @@ function Projects() {
         </div>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
         {projectData.map((project, index) => (
           <motion.div
             key={index}
@@ -804,7 +836,7 @@ function Projects() {
             transition={{ delay: index * 0.1, duration: 0.8 }}
             viewport={{ once: true }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className={`group relative p-8 border transition-all duration-500 overflow-hidden flex flex-col rounded-2xl backdrop-blur-xl
+            className={`group relative p-6 md:p-8 border transition-all duration-500 overflow-hidden flex flex-col rounded-2xl backdrop-blur-xl
               ${
                 project.isFeatured
                   ? 'bg-[#FFC20E]/8 border-[#FFC20E]/30 hover:border-[#FFC20E]/70'
@@ -821,7 +853,7 @@ function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-14 h-14 rounded-xl overflow-hidden border border-[#FFC20E]/40 shadow-[0_0_15px_rgba(255,194,14,0.15)] hover:scale-105 transition-transform"
+                    className="block w-12 h-12 md:w-14 md:h-14 rounded-xl overflow-hidden border border-[#FFC20E]/40 shadow-[0_0_15px_rgba(255,194,14,0.15)] hover:scale-105 transition-transform"
                   >
                     <img
                       src={project.logo}
@@ -830,7 +862,7 @@ function Projects() {
                     />
                   </a>
                 ) : (
-                  <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
                     <div className="w-5 h-5 bg-gradient-to-tr from-[#FFC20E] to-[#b08600] rounded-full" />
                   </div>
                 )}
@@ -845,7 +877,7 @@ function Projects() {
                   {project.status}
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white group-hover:text-[#FFC20E] transition-colors flex items-center gap-2">
+              <h3 className="text-lg md:text-xl font-bold mb-2 text-white group-hover:text-[#FFC20E] transition-colors flex items-center gap-2">
                 {project.title}
                 {project.link !== '#' && (
                   <FiExternalLink className="text-xs opacity-40" />
@@ -857,10 +889,10 @@ function Projects() {
                   {project.author}
                 </span>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed mb-8 flex-grow">
+              <p className="text-gray-500 text-sm leading-relaxed mb-6 md:mb-8 flex-grow">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-5 md:mb-6">
                 {project.tech.map((t, i) => (
                   <span
                     key={i}
@@ -871,12 +903,12 @@ function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="pt-5 border-t border-white/5 flex items-center justify-between mt-auto">
+              <div className="pt-4 md:pt-5 border-t border-white/5 flex items-center justify-between mt-auto">
                 <div className="flex -space-x-1.5">
                   {[1, 2, 3].map((i) => (
                     <div
                       key={i}
-                      className="w-7 h-7 rounded-full bg-neutral-800 border border-black/80 flex items-center justify-center text-[9px] text-gray-600"
+                      className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-neutral-800 border border-black/80 flex items-center justify-center text-[9px] text-gray-600"
                     >
                       U{i}
                     </div>
