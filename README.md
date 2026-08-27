@@ -1,151 +1,146 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A78BFA,100:6366F1&height=160&section=header&text=Ishika%20Jaiswal&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Full-Stack%20%C2%B7%20Web3%20%C2%B7%20Building%20things%20that%20don't%20hallucinate&descAlignY=62&descSize=15" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:7C3AED&height=200&section=header&text=KITT%20NEXUS&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=The%20Official%20Technical%20Society%20of%20KIIT%20University&descAlignY=55&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=550&lines=Full-Stack+Web+%7C+Web3+%2F+Solidity;Building+with+Next.js+%2B+Foundry;GSSoC+'26+Contributor" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1200&color=7C3AED&center=true&vCenter=true&width=600&lines=Building+%7C+Learning+%7C+Collaborating;Code.+Create.+Connect." alt="Typing SVG" />
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ishika-jaiswal-96b3b4284/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-blush-xi-30.vercel.app/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ishikajais_27/)
-[![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ishikajais09876@gmail.com)
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](#)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#)
 
-![Profile Views](https://komarev.com/ghpvc/?username=ishikajais27&style=flat-square&color=A78BFA&label=profile+views)
+![GitHub followers](https://img.shields.io/github/followers/KiitNexus?style=social)
+![Profile Views](https://komarev.com/ghpvc/?username=KiitNexus&style=flat-square&color=7C3AED&label=profile+views)
 
 </div>
+
+<br/>
+
+> _"Talk is cheap. Show me the code."_ — **Linus Torvalds**
 
 <br/>
 
 ```javascript
-const ishika = {
-  focus: [
-    'Full-Stack Web',
-    'Web3 / Solidity',
-    'AI pipelines (when they earn it)',
-  ],
-  stack: ['Next.js', 'Node.js', 'PostgreSQL', 'Solidity', 'Foundry'],
-  building: "products that are grounded, fast, and don't hallucinate",
-  currently: "GSSoC '26 contributor + Web3 contracts + whatever ships next",
+const kittNexus = {
+  identity: 'Official Technical Society, KIIT University',
+  mission: 'Turning curious students into confident builders',
+  approach: ['learn in public', 'build in the open', 'ship real projects'],
+  believesIn: 'community > competition',
 }
 ```
 
+---
+
+## 📌 About Us
+
+**KITT NEXUS** is a student-driven technical community focused on building a strong culture of software development, collaborative learning, and hands-on technology practice on campus. We bring together students who want to go beyond the classroom — sharing knowledge, building real projects, and growing together as developers.
+
+Our goal is simple: create a space where curiosity meets execution.
+
 <br/>
 
-## ⚡ Shipped
-
-<table>
+<table align="center">
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-**[GitFolio](https://github.com/ishikajais27/GitFolio)**
-
-GitHub OAuth → live portfolio README generator
-
-`MERN` `JWT` `GitHub REST API`
+> _"The best way to predict the future is to invent it."_
+> — **Alan Kay**
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-**[RepoDoc](https://github.com/ishikajais27/RepoDoc)**
-
-AI that reads your repo and writes verified docs
-
-`Next.js` `Agentic LLM` `Schema Validation`
+> _"Programs must be written for people to read, and only incidentally for machines to execute."_
+> — **Harold Abelson**
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**[VibeFiles](https://github.com/ishikajais27/VibeFiles)**
+> _"Alone we can do so little; together we can do so much."_
+> — **Helen Keller**
 
-Screenshot → file scaffold, live on VS Code Marketplace
+</td>
+<td width="50%" valign="top">
 
-`TypeScript` `Groq Vision` `Vercel`
+> _"First, solve the problem. Then, write the code."_
+> — **John Johnson**
 
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
-## 🛠 Stack
+## 🎯 What We Do
 
 <table>
 <tr>
-<td valign="top" width="33%">
-
-**Web2**
-
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000?style=flat-square&logo=express&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</td>
-<td valign="top" width="33%">
-
-**Web3**
-
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![Foundry](https://img.shields.io/badge/Foundry-000?style=flat-square&logo=ethereum&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-
-</td>
-<td valign="top" width="33%">
-
-**Infra & Tools**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-
-</td>
+<td>👩‍💻</td><td><b>Skill-building sessions</b> — workshops and peer-led learning on relevant technologies</td>
+</tr>
+<tr>
+<td>🛠️</td><td><b>Project collaboration</b> — open, community-built software projects</td>
+</tr>
+<tr>
+<td>🚀</td><td><b>Hackathons & coding events</b> — opportunities to build, ship, and compete</td>
+</tr>
+<tr>
+<td>🤝</td><td><b>Mentorship & community</b> — connecting members across skill levels</td>
+</tr>
+<tr>
+<td>🌐</td><td><b>Open-source contribution</b> — encouraging students to contribute to real-world codebases</td>
 </tr>
 </table>
 
-<br/>
+---
 
-## 📊 GitHub Stats
+## 🧰 Tech We Work With
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=ishikajais27&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=3600"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishikajais27&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&cache_seconds=3600"/>
-
-<br/>
-
-![Streak](https://streak-stats.demolab.com?user=ishikajais27&theme=tokyonight&hide_border=true)
-
-<sub>⚠️ Streak card may occasionally fail to load due to a known rate-limit issue on the public demo server — see setup notes for a permanent fix via GitHub Actions.</sub>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ishikajais27&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 </div>
 
-<br/>
+<p align="center"><i>Our tooling evolves with the interests and projects of our members.</i></p>
+
+---
+
+## 📂 Repositories
+
+Explore our projects and contributions in the **Repositories** tab above — from workshop resources to member-built applications.
+
+---
+
+## 🤝 Get Involved
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ishikajais27/ishikajais27/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ishikajais27/ishikajais27/output/github-snake.svg"/>
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/ishikajais27/ishikajais27/output/github-snake.svg"/>
-</picture>
+📩 Reach out via the links above &nbsp;•&nbsp; 🌟 Star and explore our repositories &nbsp;•&nbsp; 🧑‍🤝‍🧑 Follow us for updates on events and projects
+
+<br/>
+
+> _"None of us is as smart as all of us."_ — **Ken Blanchard**
 
 </div>
 
-<br/>
+---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:A78BFA&height=100&section=footer" width="100%"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:00D9FF&height=120&section=footer"/>
+
+**KITT NEXUS** · KIIT University
+<br/>
+<sub>Building | Learning | Collaborating</sub>
+
 </div>
