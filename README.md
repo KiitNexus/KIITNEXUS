@@ -1,10 +1,8 @@
 <div align="center">
 
-# ⚡ KITT NEXUS
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:7C3AED&height=200&section=header&text=KITT%20NEXUS&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=The%20Official%20Technical%20Society%20of%20KIIT%20University&descAlignY=55&descSize=18" width="100%"/>
 
-### The Official Technical Society of KIIT University
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=650&lines=Building+%7C+Learning+%7C+Collaborating;Empowering+Student+Developers+at+KIIT" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1200&color=7C3AED&center=true&vCenter=true&width=600&lines=Building+%7C+Learning+%7C+Collaborating;Code.+Create.+Connect." alt="Typing SVG" />
 
 <br/>
 
@@ -13,7 +11,25 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](#)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#)
 
+![GitHub followers](https://img.shields.io/github/followers/KiitNexus?style=social)
+![Profile Views](https://komarev.com/ghpvc/?username=KiitNexus&style=flat-square&color=7C3AED&label=profile+views)
+
 </div>
+
+<br/>
+
+> _"Talk is cheap. Show me the code."_ — **Linus Torvalds**
+
+<br/>
+
+```javascript
+const kittNexus = {
+  identity: 'Official Technical Society, KIIT University',
+  mission: 'Turning curious students into confident builders',
+  approach: ['learn in public', 'build in the open', 'ship real projects'],
+  believesIn: 'community > competition',
+}
+```
 
 ---
 
@@ -23,15 +39,60 @@
 
 Our goal is simple: create a space where curiosity meets execution.
 
+<br/>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+> _"The best way to predict the future is to invent it."_
+> — **Alan Kay**
+
+</td>
+<td width="50%" valign="top">
+
+> _"Programs must be written for people to read, and only incidentally for machines to execute."_
+> — **Harold Abelson**
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+> _"Alone we can do so little; together we can do so much."_
+> — **Helen Keller**
+
+</td>
+<td width="50%" valign="top">
+
+> _"First, solve the problem. Then, write the code."_
+> — **John Johnson**
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🎯 What We Do
 
-- 👩‍💻 **Skill-building sessions** — workshops and peer-led learning on relevant technologies
-- 🛠️ **Project collaboration** — open, community-built software projects
-- 🚀 **Hackathons & coding events** — opportunities to build, ship, and compete
-- 🤝 **Mentorship & community** — connecting members across skill levels
-- 🌐 **Open-source contribution** — encouraging students to contribute to real-world codebases
+<table>
+<tr>
+<td>👩‍💻</td><td><b>Skill-building sessions</b> — workshops and peer-led learning on relevant technologies</td>
+</tr>
+<tr>
+<td>🛠️</td><td><b>Project collaboration</b> — open, community-built software projects</td>
+</tr>
+<tr>
+<td>🚀</td><td><b>Hackathons & coding events</b> — opportunities to build, ship, and compete</td>
+</tr>
+<tr>
+<td>🤝</td><td><b>Mentorship & community</b> — connecting members across skill levels</td>
+</tr>
+<tr>
+<td>🌐</td><td><b>Open-source contribution</b> — encouraging students to contribute to real-world codebases</td>
+</tr>
+</table>
 
 ---
 
@@ -39,18 +100,18 @@ Our goal is simple: create a space where curiosity meets execution.
 
 <div align="center">
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 </div>
 
-> Our tooling evolves with the interests and projects of our members.
+<p align="center"><i>Our tooling evolves with the interests and projects of our members.</i></p>
 
 ---
 
@@ -62,17 +123,24 @@ Explore our projects and contributions in the **Repositories** tab above — fro
 
 ## 🤝 Get Involved
 
-Interested in joining, collaborating, or contributing?
+<div align="center">
 
-- 📩 Reach out via the links above
-- 🌟 Star and explore our repositories
-- 🧑‍🤝‍🧑 Follow this organization for updates on events and projects
+📩 Reach out via the links above &nbsp;•&nbsp; 🌟 Star and explore our repositories &nbsp;•&nbsp; 🧑‍🤝‍🧑 Follow us for updates on events and projects
+
+<br/>
+
+> _"None of us is as smart as all of us."_ — **Ken Blanchard**
+
+</div>
 
 ---
 
 <div align="center">
 
-**KITT NEXUS** · KIIT University  
-_Building | Learning | Collaborating_
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:00D9FF&height=120&section=footer"/>
+
+**KITT NEXUS** · KIIT University
+<br/>
+<sub>Building | Learning | Collaborating</sub>
 
 </div>
