@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:7C3AED&height=200&section=header&text=KITT%20NEXUS&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=The%20Official%20Technical%20Society%20of%20KIIT%20University&descAlignY=55&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1200&color=7C3AED&center=true&vCenter=true&width=600&lines=Building+%7C+Learning+%7C+Collaborating;Code.+Create.+Connect." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=7C3AED&center=true&vCenter=true&width=600&lines=Building+%7C+Learning+%7C+Collaborating;Code.+Create.+Connect." alt="Typing SVG" />
 
 <br/>
 
@@ -11,8 +11,10 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](#)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#)
 
-![GitHub followers](https://img.shields.io/github/followers/KiitNexus?style=social)
-![Profile Views](https://komarev.com/ghpvc/?username=KiitNexus&style=flat-square&color=7C3AED&label=profile+views)
+<br/>
+
+![GitHub followers](https://img.shields.io/github/followers/KiitNexus?color=7C3AED&label=Followers&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=KiitNexus&style=for-the-badge&color=00D9FF&label=Profile+Views)
 
 </div>
 
@@ -31,7 +33,7 @@ const kittNexus = {
 }
 ```
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
 
 ## 📌 About Us
 
@@ -72,29 +74,19 @@ Our goal is simple: create a space where curiosity meets execution.
 </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
 
 ## 🎯 What We Do
 
 <table>
-<tr>
-<td>👩‍💻</td><td><b>Skill-building sessions</b> — workshops and peer-led learning on relevant technologies</td>
-</tr>
-<tr>
-<td>🛠️</td><td><b>Project collaboration</b> — open, community-built software projects</td>
-</tr>
-<tr>
-<td>🚀</td><td><b>Hackathons & coding events</b> — opportunities to build, ship, and compete</td>
-</tr>
-<tr>
-<td>🤝</td><td><b>Mentorship & community</b> — connecting members across skill levels</td>
-</tr>
-<tr>
-<td>🌐</td><td><b>Open-source contribution</b> — encouraging students to contribute to real-world codebases</td>
-</tr>
+<tr><td>👩‍💻</td><td><b>Skill-building sessions</b> — workshops and peer-led learning on relevant technologies</td></tr>
+<tr><td>🛠️</td><td><b>Project collaboration</b> — open, community-built software projects</td></tr>
+<tr><td>🚀</td><td><b>Hackathons & coding events</b> — opportunities to build, ship, and compete</td></tr>
+<tr><td>🤝</td><td><b>Mentorship & community</b> — connecting members across skill levels</td></tr>
+<tr><td>🌐</td><td><b>Open-source contribution</b> — encouraging students to contribute to real-world codebases</td></tr>
 </table>
 
----
+<br/>
 
 ## 🧰 Tech We Work With
 
@@ -113,13 +105,13 @@ Our goal is simple: create a space where curiosity meets execution.
 
 <p align="center"><i>Our tooling evolves with the interests and projects of our members.</i></p>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
 
 ## 📂 Repositories
 
 Explore our projects and contributions in the **Repositories** tab above — from workshop resources to member-built applications.
 
----
+<br/>
 
 ## 🤝 Get Involved
 
@@ -133,7 +125,7 @@ Explore our projects and contributions in the **Repositories** tab above — fro
 
 </div>
 
----
+<br/>
 
 <div align="center">
 
