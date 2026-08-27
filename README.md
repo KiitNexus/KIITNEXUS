@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&lines=Hey+%E2%80%94+I'm+Ishika+%F0%9F%91%8B" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A78BFA,100:6366F1&height=160&section=header&text=Ishika%20Jaiswal&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Full-Stack%20%C2%B7%20Web3%20%C2%B7%20Building%20things%20that%20don't%20hallucinate&descAlignY=62&descSize=15" width="100%"/>
+
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=550&lines=Full-Stack+Web+%7C+Web3+%2F+Solidity;Building+with+Next.js+%2B+Foundry;GSSoC+'26+Contributor" alt="Typing SVG" />
 
 <br/>
 
@@ -32,15 +34,45 @@ const ishika = {
 
 ## ⚡ Shipped
 
-| Project                                                    | What it is                                               | Core tech                                 |
-| ---------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------- |
-| [**GitFolio**](https://github.com/ishikajais27/GitFolio)   | GitHub OAuth → live portfolio README generator           | MERN · JWT · GitHub REST API              |
-| [**RepoDoc**](https://github.com/ishikajais27/RepoDoc)     | AI that reads your repo and writes verified docs         | Next.js · Agentic LLM · Schema Validation |
-| [**VibeFiles**](https://github.com/ishikajais27/VibeFiles) | Screenshot → file scaffold · live on VS Code Marketplace | TypeScript · Groq Vision · Vercel         |
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**[GitFolio](https://github.com/ishikajais27/GitFolio)**
+
+GitHub OAuth → live portfolio README generator
+
+`MERN` `JWT` `GitHub REST API`
+
+</td>
+<td width="33%" valign="top">
+
+**[RepoDoc](https://github.com/ishikajais27/RepoDoc)**
+
+AI that reads your repo and writes verified docs
+
+`Next.js` `Agentic LLM` `Schema Validation`
+
+</td>
+<td width="33%" valign="top">
+
+**[VibeFiles](https://github.com/ishikajais27/VibeFiles)**
+
+Screenshot → file scaffold, live on VS Code Marketplace
+
+`TypeScript` `Groq Vision` `Vercel`
+
+</td>
+</tr>
+</table>
 
 <br/>
 
 ## 🛠 Stack
+
+<table>
+<tr>
+<td valign="top" width="33%">
 
 **Web2**
 
@@ -55,13 +87,19 @@ const ishika = {
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
+</td>
+<td valign="top" width="33%">
+
 **Web3**
 
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![Foundry](https://img.shields.io/badge/Foundry-000?style=flat-square&logo=ethereum&logoColor=white)
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
 
-**Infra & tools**
+</td>
+<td valign="top" width="33%">
+
+**Infra & Tools**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
@@ -69,18 +107,28 @@ const ishika = {
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 
+</td>
+</tr>
+</table>
+
 <br/>
 
-## 📊 GitHub
+## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=ishikajais27&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishikajais27&layout=compact&theme=tokyonight&hide_border=true&langs_count=6"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=ishikajais27&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=3600"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishikajais27&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&cache_seconds=3600"/>
 
 <br/>
 
 ![Streak](https://streak-stats.demolab.com?user=ishikajais27&theme=tokyonight&hide_border=true)
+
+<sub>⚠️ Streak card may occasionally fail to load due to a known rate-limit issue on the public demo server — see setup notes for a permanent fix via GitHub Actions.</sub>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ishikajais27&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
 
 </div>
 
@@ -94,4 +142,10 @@ const ishika = {
   <img alt="github contribution snake" src="https://raw.githubusercontent.com/ishikajais27/ishikajais27/output/github-snake.svg"/>
 </picture>
 
+</div>
+
+<br/>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:A78BFA&height=100&section=footer" width="100%"/>
 </div>
