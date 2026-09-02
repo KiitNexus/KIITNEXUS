@@ -145,7 +145,7 @@ _"Alone we can do so little; together we can do so much."_
 
 <div align="center">
 
-### _"The best way to predict the future is to invent it."_
+### _"The  best way to predict the future is to invent it."_
 
 **— Alan Kay**
 
